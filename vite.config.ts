@@ -11,7 +11,7 @@ export default async () => {
   const UnoCSS = (await import('unocss/vite')).default
   return defineConfig({
     plugins: [
-      uni(),
+
       UniLayouts(),
       AutoImport({
         imports: [
@@ -24,6 +24,7 @@ export default async () => {
       Components({
         resolvers: [WotResolver()],
       }),
+      uni(),
     ],
 
   })
