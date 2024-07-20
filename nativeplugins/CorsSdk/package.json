@@ -1,0 +1,24 @@
+{
+  "name": "cors-sdk",
+  "id": "CorsSdk",
+  "version": "1.0.0",
+  "description": "插件描述信息",
+  "_dp_type":"nativeplugin",
+  "_dp_nativeplugin":{
+    "android": {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "CorsSdk",
+          "class": "cn.com.xaxqh.cors.sdk.CorsSdk"
+        }
+      ],
+      "hooksClass": "可选, 事件钩子注册类名",
+      "integrateType": "aar",
+      "abis": [
+        "armeabi-v7a","arm64-v8a","x86"
+      ],
+      "minSdkVersion": "21"
+    }
+  }
+}
