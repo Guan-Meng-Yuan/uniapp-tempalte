@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import { useToast } from 'wot-design-uni'
-import { request } from '@/utils/http'
+import api from '@/pages/index/api'
 
 const toast = useToast()
+// #ifdef APP-IOS || APP-ANDROID || APP-PLUS || APP-NVUE
+
 const p = uni.requireNativePlugin('CorsSdk')
-console.log(p.test())
+// #endif
+
 async function testReq() {
-  const res = await request(toast, '/test')
+  const res = await api.test(toast)
   console.log(res)
 }
 </script>
@@ -15,7 +18,9 @@ async function testReq() {
   <div text-30rpx>
     测试
   </div>
-  <wd-button @click="testReq" />
+  <wd-button @click="testReq">
+    测试按钮
+  </wd-button>
 </template>
 
 <style scoped>

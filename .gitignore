@@ -20,3 +20,5 @@ dist
 *.sln
 *.sw?
 .hbuilderx
+auto-imports.d.ts
+components.d.ts
