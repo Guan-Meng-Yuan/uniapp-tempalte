@@ -1,5 +1,5 @@
 <h2 style="text-align: center">
-Vitesse for uni-app
+uniapp-template
 </h2>
 
 ## 快速使用
@@ -10,7 +10,8 @@ pnpm degit guan-meng-yuan/uniapp-template your-project-name
 
 ## 特性
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - 就是快！
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) -
+就是快！
 
 - 📦 [组件自动化加载](https://uni-helper.js.org/vite-plugin-uni-components)
 
