@@ -5,12 +5,11 @@ import api from '@/pages/index/api'
 const toast = useToast()
 // #ifdef APP-IOS || APP-ANDROID || APP-PLUS || APP-NVUE
 
-const p = uni.requireNativePlugin('CorsSdk')
+// const p = uni.requireNativePlugin('CorsSdk')
 // #endif
 
 async function testReq() {
-  const res = await api.test(toast)
-  console.log(res)
+  return await api.test(toast)
 }
 </script>
 
