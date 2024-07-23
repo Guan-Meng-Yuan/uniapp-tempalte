@@ -1,3 +1,5 @@
+import type { Toast } from 'wot-design-uni/components/wd-toast/types'
+
 export {}
 
 declare module 'vue' {
@@ -19,5 +21,13 @@ declare global{
     success: boolean
     message: string
     tips: string
+  }
+  interface RequestOption {
+    toast?: Toast
+    url?: string
+    data?: any
+    method?: 'OPTIONS' | 'GET' | 'HEAD' | 'POST' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT'
+    needLoading?: boolean
+    loadingMessage?: string
   }
 }
