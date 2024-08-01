@@ -1,16 +1,17 @@
 class defHttp {
-  private static async callApi<T>(requestOption: RequestOption = { loadingMessage: '加载中' }) {
+  private static async callApi<T>(requestOption: RequestOption) {
     const httpUrl = import.meta.env.VITE_HTTP_URL
-    const ClientType = uni.getSystemInfoSync().uniPlatform
+    const info = uni.getSystemInfoSync()
+    const ClientType = info.uniPlatform
     return new Promise<T>((resolve, reject) => {
       if (requestOption.needLoading) {
-        requestOption.toast?.loading(requestOption.loadingMessage || {})
+        requestOption.toast?.loading(requestOption.loadingMessage || '加载中')
       }
       uni.request({
-        url: `${httpUrl}${requestOption.url}`,
+        url: `${httpUrl}/admin${requestOption.url}`,
         method: requestOption.method,
         data: requestOption.data,
-        headers: {
+        header: {
           Authorization: uni.getStorageSync('TOKEN') || '',
           ClientType,
         },
@@ -45,19 +46,23 @@ class defHttp {
     })
   }
 
-  static async get<T>(requestOption: RequestOption = { method: 'GET' }) {
+  static async get<T>(requestOption: RequestOption) {
+    requestOption.method = 'GET'
     return defHttp.callApi<T>(requestOption)
   }
 
-  static async post<T>(requestOption: RequestOption = { method: 'POST' }) {
+  static async post<T>(requestOption: RequestOption) {
+    requestOption.method = 'POST'
     return defHttp.callApi<T>(requestOption)
   }
 
-  static async delete<T>(requestOption: RequestOption = { method: 'DELETE' }) {
+  static async delete<T>(requestOption: RequestOption) {
+    requestOption.method = 'DELETE'
     return defHttp.callApi<T>(requestOption)
   }
 
-  static async put<T>(requestOption: RequestOption = { method: 'PUT' }) {
+  static async put<T>(requestOption: RequestOption) {
+    requestOption.method = 'PUT'
     return defHttp.callApi<T>(requestOption)
   }
 }
