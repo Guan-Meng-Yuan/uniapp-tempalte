@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-4020520240731001",
+    "@dcloudio/uni-app-uts": "3.0.0-alpha-4020520240731001",
     "@dcloudio/uni-app-harmony": "3.0.0-alpha-4020520240731001",
     "@dcloudio/uni-app-plus": "3.0.0-alpha-4020520240731001",
     "@dcloudio/uni-components": "3.0.0-alpha-4020520240731001",
@@ -57,6 +58,8 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-4020520240731001",
     "@dcloudio/uni-mp-xhs": "3.0.0-alpha-4020520240731001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-4020520240731001",
+    "@dcloudio/uni-uts-v1": "3.0.0-alpha-4020520240731001",
+    "@dcloudio/uts": "3.0.0-alpha-4020520240731001",
     "lodash-es": "^4.17.21",
     "vue": "^3.4.35",
     "vue-i18n": "^9.13.1",
