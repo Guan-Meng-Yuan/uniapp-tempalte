@@ -1,6 +1,6 @@
 {
     "name" : "uniapp-template",
-    "appid" : "__UNI__19ED9C0",
+    "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -47,22 +47,6 @@
             /* SDK配置 */
             "sdkConfigs" : {
                 "ad" : {}
-            }
-        },
-        "nativePlugins" : {
-            "CorsSdk" : {
-                "__plugin_info__" : {
-                    "name" : "CorsSdk",
-                    "description" : "插件描述信息",
-                    "platforms" : "Android",
-                    "url" : "",
-                    "android_package_name" : "",
-                    "ios_bundle_id" : "",
-                    "isCloud" : false,
-                    "bought" : -1,
-                    "pid" : "",
-                    "parameters" : {}
-                }
             }
         }
     },
