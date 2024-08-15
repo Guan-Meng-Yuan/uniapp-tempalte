@@ -1,0 +1,3 @@
+.hidden-alipay-tab-bar{
+    display: none;
+}

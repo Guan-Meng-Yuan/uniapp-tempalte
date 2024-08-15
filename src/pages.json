@@ -1,17 +1,41 @@
 {
-	"pages": [
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			},
-			"layout": "default"
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "layout": "default"
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      },
+      "layout": "default"
+    },
+    {
+      "path": "pages/me/index",
+      "layout": "default"
+    }
+  ],
+  "tabBar": {
+    "color": "#FFFFFF",
+    "selectedColor": "#4D80F0",
+    "custom": true,
+    "customize": true,
+    "overlay": true,
+    "list": [
+      {
+        "pagePath": "pages/home/index"
+
+      },
+      {
+        "pagePath": "pages/me/index"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
 }
