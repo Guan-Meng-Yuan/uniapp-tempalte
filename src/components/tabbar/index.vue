@@ -13,7 +13,6 @@ const items = [
 ]
 
 function scan() {
-  console.log('helloWorld')
 }
 
 function onTabbarChange({ value }: { value: number }) {
