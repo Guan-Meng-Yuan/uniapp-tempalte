@@ -39,4 +39,8 @@ uni.addInterceptor('switchTab', {
 })
 </script>
 
-<style></style>
+<style>
+page{
+  background-color: #F8F8F8 !important;
+}
+</style>
